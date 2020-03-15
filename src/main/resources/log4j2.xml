@@ -10,7 +10,7 @@
         </Console>
         <RollingFile name="RollFileAppender" filename="${logfile}" append="false"
                      immediateFlush="false"
-                     filePattern="../logs/application-%d{yyyy-MM-dd}-%i.log.xz">
+                     filePattern="logs/application-%d{yyyy-MM-dd}-%i.log.xz">
             <PatternLayout
                     pattern="%d{ISO8601} %-5p [%t] %c{1.}: %m%n%throwable"/>
             <Policies>
