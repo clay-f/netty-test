@@ -8,6 +8,8 @@ import netty.disk.error.test.server.NettyServer;
 public class App {
 
     public static void main(String[] args) {
-        new Thread(new NettyServer()).start();
+        Thread thread =  new Thread(new NettyServer());
+        thread.setName("netty server thread");
+        thread.start();
     }
 }
